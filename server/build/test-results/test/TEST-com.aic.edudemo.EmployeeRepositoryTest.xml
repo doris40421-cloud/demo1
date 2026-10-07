@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.aic.edudemo.EmployeeRepositoryTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-05T05:11:23.705Z" hostname="0000114051-NB" time="5.579">
+  <properties/>
+  <testcase name="findById_shouldReturnEmployee()" classname="com.aic.edudemo.EmployeeRepositoryTest" time="1.11"/>
+  <testcase name="findAll_shouldReturnEmployees()" classname="com.aic.edudemo.EmployeeRepositoryTest" time="0.037"/>
+  <system-out><![CDATA[13:11:23.867 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.aic.edudemo.EmployeeRepositoryTest]: EmployeeRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:11:23.956 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.aic.edudemo.ServerApplication for test class com.aic.edudemo.EmployeeRepositoryTest
+13:11:24.036 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.aic.edudemo.EmployeeRepositoryTest]: EmployeeRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:11:24.038 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.aic.edudemo.ServerApplication for test class com.aic.edudemo.EmployeeRepositoryTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.1)
+
+2026-10-05T13:11:24.356+08:00  INFO 23736 --- [server] [    Test worker] com.aic.edudemo.EmployeeRepositoryTest   : Starting EmployeeRepositoryTest using Java 17.0.20.1 with PID 23736 (started by DorisKuo in C:\Users\DorisKuo\Desktop\edu project\EduDemo\server)
+2026-10-05T13:11:24.357+08:00  INFO 23736 --- [server] [    Test worker] com.aic.edudemo.EmployeeRepositoryTest   : No active profile set, falling back to 1 default profile: "default"
+2026-10-05T13:11:24.891+08:00  INFO 23736 --- [server] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-05T13:11:24.945+08:00  INFO 23736 --- [server] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interface.
+2026-10-05T13:11:25.519+08:00  INFO 23736 --- [server] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-05T13:11:25.856+08:00  INFO 23736 --- [server] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@45d7495e
+2026-10-05T13:11:25.858+08:00  INFO 23736 --- [server] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-05T13:11:25.892+08:00  INFO 23736 --- [server] [    Test worker] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-05T13:11:25.952+08:00  INFO 23736 --- [server] [    Test worker] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-10-05T13:11:26.482+08:00  INFO 23736 --- [server] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-05T13:11:26.726+08:00  WARN 23736 --- [server] [    Test worker] org.hibernate.orm.core                   : HHH000511: The 11.2.0 version for [org.hibernate.dialect.OracleDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 19.0.0. Check the community dialects project for available legacy versions.
+2026-10-05T13:11:26.757+08:00  WARN 23736 --- [server] [    Test worker] org.hibernate.orm.jdbc                   : HHH100123: Low default JDBC fetch size: 10 (consider setting 'hibernate.jdbc.fetch_size')
+2026-10-05T13:11:26.760+08:00  INFO 23736 --- [server] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:oracle:thin:@192.168.100.165:1521:orcl]
+	Database driver: Oracle JDBC driver
+	Database dialect: OracleDialect
+	Database version: 11.2
+	Default catalog/schema: undefined/VUEDEMO
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 10
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-05T13:11:27.506+08:00  INFO 23736 --- [server] [    Test worker] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-05T13:11:27.515+08:00  INFO 23736 --- [server] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-05T13:11:27.588+08:00  WARN 23736 --- [server] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-05T13:11:27.935+08:00  INFO 23736 --- [server] [    Test worker] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-05T13:11:28.111+08:00  INFO 23736 --- [server] [    Test worker] com.aic.edudemo.EmployeeRepositoryTest   : Started EmployeeRepositoryTest in 4.016 seconds (process running for 5.207)
+員工: Employee(employeeId=203, firstName=SusanHa, lastName=Mavris, email=SMAVRIS, phoneNumber=515.123.7777, hireDate=2022-03-23, jobId=HR_REP, salary=6510, commissionPct=null, managerId=101, departmentId=40)
+員工總數: 116
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
